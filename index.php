@@ -3,7 +3,6 @@ include "koneksi.php";
 
 $query = "SELECT * FROM mahasiswa";
 $data = ambildata($query);
-
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +15,7 @@ $data = ambildata($query);
 <body>
     <h1>DATA MAHASISWA</h1>
     <br>
+    <button><a href="tambahmahasiswa.php">Tambah</a></button>
     <br>
     <table border="1" cellspacing="0" cellpadding="5">
         <thead>

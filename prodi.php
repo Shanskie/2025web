@@ -17,7 +17,7 @@ $data = ambildata($query);
     <br>
     <br>
     <table border="1" cellspacing="0" cellpadding="5">
-        <thead>
+        <thead> 
             <tr>
                 <th>No</th>
                 <th>Nama</th>
