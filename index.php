@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: login.html");
+}
 include "koneksi.php";
 
 $query = "SELECT m .*, p.nama namaProdi FROM `mahasiswa` m JOIN prodi p ON m.id_prodi = id;";
@@ -45,5 +49,6 @@ $data = ambildata($query);
             </tr>
         </tbody>
     </table>
+    <a href="logout.php">Keluar</a>
 </body>
 </html>
