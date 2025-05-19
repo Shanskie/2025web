@@ -17,4 +17,11 @@
         
     }
 
+    function ceklogin()
+    {
+        if (!isset($_SESSION['login'])) {
+            header("Location: login.html");
+        }
+    }
+
 ?>
